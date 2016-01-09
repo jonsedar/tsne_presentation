@@ -1,17 +1,14 @@
-name: pymc_examples
+name: tsne_presentation
 dependencies:
-- python=3.4
+- python=3.5
 - ipython
 - ipython-notebook
 - ipython-qtconsole
+- ipywidgets
 - numpy
 - scipy
-- matplotlib
+- matplotlib=1.4.3
 - pandas
-- pytables
 - scikit-learn
-- statsmodels
 - seaborn
-- patsy
-- requests
 - pip

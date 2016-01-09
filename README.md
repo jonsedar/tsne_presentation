@@ -47,12 +47,11 @@ Then open `localhost:8000/tsne_presentation.html` in your webbrowser
 
 # Execute the Notebook for yourself and use RISE to present
 
-## Setup a virtual environment for Python libraries
+## Setup a virtual environment for this project
 
-**NOTE:** using Python 3.4
+**NOTE:** requires Python 3.5 for RISE to correctly work
 
-Using Anaconda distro, create a new virtual env, installing packages from
-env YAML file:
+Using Anaconda distro, create a new virtualenv, installing packages using YAML file:
 
         $> conda env create --file conda_env_tsne_presentation.yml
         $> source activate tsne_presentation
@@ -63,7 +62,7 @@ env YAML file:
 
 1. Clone the RISE repo https://github.com/damianavila/RISE
 2. Source activate your python environment (if not already done)
-3. Run `python setup.py install` from within the cloned RISE directory, this will install the nbextension
+3. Run `python setup.py install` from within the cloned RISE directory, this will install the nbextension into your virtualenv
 
 
 ## Edit or rerun the Notebook
@@ -72,10 +71,14 @@ env YAML file:
 make edits, re-run etc as you wish
 
 ## View the RISE presentation
+
 1. Click the newly added button within the Notebook menu "Enter/Exit Live Reveal Slideshow"
+2. Be sure to check out the interactive elements on the grouped boxplots and the 3D scatterplot.
+3. You can also double-click into the Notebook cells and edit them live, if you wish
 
 
-## Compile a static presentation using plain old reveal.js
+
+## Optionally compile a static presentation using plain old reveal.js
 
 1. At the terminal, use nbconvert:
 
